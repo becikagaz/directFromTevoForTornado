@@ -526,7 +526,8 @@
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.3190, 80.3190, 399.2901, 400 }
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 399.2901, 400 }
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 399.2901, 400 }  // Using with DRV8825 on X and Y axe
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 399.2901 * 2, 800 }  // Using with DRV8825 on X, Y, Z and E0
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1364,7 +1365,7 @@
 //
 // Note: Usually sold with a white PCB.
 //
-//#define REPRAP_DISCOUNT_SMART_CONTROLLER
+#define REPRAP_DISCOUNT_SMART_CONTROLLER
 
 //
 // GADGETS3D G3D LCD/SD Controller
@@ -1379,7 +1380,7 @@
 // http://reprap.org/wiki/RepRapDiscount_Full_Graphic_Smart_Controller
 //
 // Philippe test changement de display
-#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
+//#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
 
 //
 // MakerLab Mini Panel with graphic
