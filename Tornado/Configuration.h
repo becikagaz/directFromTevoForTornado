@@ -527,7 +527,7 @@
  */
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.3190, 80.3190, 399.2901, 400 }
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 399.2901, 400 }  // Using with DRV8825 on X and Y axe
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 399.2901 * 2, 800 }  // Using with DRV8825 on X, Y, Z and E0
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80.3190 *2 , 80.3190 * 2, 399.2901 * 2, 400 *2 }  // Using with DRV8825 on X, Y, Z and E0
 
 /**
  * Default Max Feed Rate (mm/s)
