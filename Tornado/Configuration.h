@@ -527,7 +527,8 @@
  */
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.3190, 80.3190, 399.2901, 400 }
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 399.2901, 400 }  // Using with DRV8825 on X and Y axe
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80.3190 *2 , 80.3190 * 2, 399.2901 * 2, 400 *2 }  // Using with DRV8825 on X, Y, Z and E0
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80  , 80 , 399.2901, 400 *2 }  // Using with DRV8825 on X, Y, Z and E0
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   {155.3398058,154.589272,819.672131,800 } // Using with DRV8825 on X, Y, Z and E0
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -744,9 +745,9 @@
 // @section machine
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
-#define INVERT_X_DIR true
-#define INVERT_Y_DIR true
-#define INVERT_Z_DIR false
+#define INVERT_X_DIR false
+#define INVERT_Y_DIR false
+#define INVERT_Z_DIR true
 
 // Enable this option for Toshiba stepper drivers
 //#define CONFIG_STEPPERS_TOSHIBA
