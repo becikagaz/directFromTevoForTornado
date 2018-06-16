@@ -527,7 +527,7 @@
  */
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.3190, 80.3190, 399.2901, 400 }
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 399.2901, 400 }  // Using with DRV8825 on X and Y axe
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80  , 80 , 399.2901, 400 *2 }  // Using with DRV8825 on X, Y, Z and E0
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80  , 80 , 400 * 2, 400  }  // Using with DRV8825 on X, Y, Z and E0
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   {155.3398058,154.589272,819.672131,800 } // Using with DRV8825 on X, Y, Z and E0
 
 /**
@@ -745,9 +745,9 @@
 // @section machine
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
-#define INVERT_X_DIR false
-#define INVERT_Y_DIR false
-#define INVERT_Z_DIR true
+#define INVERT_X_DIR false  // false for 2130   true for 8825
+#define INVERT_Y_DIR false  // false for 2130   true for 8825
+#define INVERT_Z_DIR false   // true for 2130   false for 8825
 
 // Enable this option for Toshiba stepper drivers
 //#define CONFIG_STEPPERS_TOSHIBA
@@ -755,7 +755,7 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR false
+#define INVERT_E0_DIR true // False for 8825, true 2130 
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
