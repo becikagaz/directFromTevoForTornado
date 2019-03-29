@@ -746,7 +746,7 @@
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
 #define INVERT_X_DIR false  // false for 2130   true for 8825
-#define INVERT_Y_DIR false  // false for 2130   true for 8825
+#define INVERT_Y_DIR true  // false for 2130   true for 8825    true for lv8729
 #define INVERT_Z_DIR false   // true for 2130   false for 8825
 
 // Enable this option for Toshiba stepper drivers
