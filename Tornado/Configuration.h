@@ -746,7 +746,7 @@
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
 #define INVERT_X_DIR false  // false for 2130   true for 8825
-#define INVERT_Y_DIR true  // false for 2130   true for 8825    true for lv8729
+#define INVERT_Y_DIR false  // false for 2130   true for 8825    true for lv8729
 #define INVERT_Z_DIR false   // true for 2130   false for 8825
 
 // Enable this option for Toshiba stepper drivers
@@ -755,7 +755,7 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR true // False for 8825, true 2130 
+#define INVERT_E0_DIR false // False for 8825 or LV8729, true 2130 
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
