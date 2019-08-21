@@ -1291,6 +1291,20 @@
 
   #define USER_DESC_5 "Rear Left"
   #define USER_GCODE_5 "G1 Z10 F5000\nG1 X20 Y280\nG1 Z0"
+
+  #define USER_DESC_6 "Front Left BuildTak"
+  #define USER_GCODE_6 "G1 Z10 F5000\nG1 X60 Y60\nG1 Z0"
+
+  #define USER_DESC_7 "Front Right BuildTak"
+  #define USER_GCODE_7 "G1 Z10 F5000\nG1 X240 Y60\nG1 Z0"
+
+  #define USER_DESC_8 "Rear Right BuildTak"
+  #define USER_GCODE_8 "G1 Z10 F5000\nG1 X240 Y250\nG1 Z0"
+
+  #define USER_DESC_9 "Rear Left BuildTak"
+  #define USER_GCODE_9 "G1 Z10 F5000\nG1 X60 Y250\nG1 Z0"
+
+
 #endif
 
 /**
